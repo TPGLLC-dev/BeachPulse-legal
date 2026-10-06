@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeachPulse – Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8rem; color: #111827; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; color: #111827; margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    p, li { color: #374151; font-size: 0.95rem; }
+    ul { padding-left: 20px; }
+    a { color: #0d7a5f; }
+    .meta { color: #6b7280; font-size: 0.875rem; margin-bottom: 28px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; font-size: 0.9rem; }
+    th { background: #f9fafb; }
+    .callout { background: #f0fdf9; border-left: 4px solid #0d7a5f; padding: 12px 16px; margin: 18px 0; }
+  </style>
+</head>
+<body>
+
+  <h1>BeachPulse &mdash; Privacy Policy</h1>
+  <p class="meta">
+    <strong>Effective Date:</strong> September 4, 2026 &nbsp;&bull;&nbsp;
+    <strong>Last Updated:</strong> September 24, 2026
+  </p>
+
+  <p>
+    This Privacy Policy describes how The Penelope Group LLC ("we," "us," or "our") handles information in
+    BeachPulse ("the App"). BeachPulse recommends which Florida beach to visit, given when you are free, how far
+    you will drive, and what you care about.
+  </p>
+
+  <div class="callout">
+    <p style="margin:0">
+      <strong>The short version.</strong> BeachPulse has no accounts. We do not know who you are, we cannot
+      identify you, and we keep no record of your use of the App. The only personal information the App ever
+      transmits is your starting point, rounded to about 100 meters and sent with nothing that identifies you to
+      our routing service, which asks TomTom for driving times and keeps that rounded point for at most an hour
+      &mdash; and only if you choose to share it.
+    </p>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+
+  <p>
+    <strong>We collect nothing about who you are.</strong> We operate no account system and no database. The one
+    service we run, for driving times, receives a rounded starting point and nothing else about you (Section 3). There is no sign-up, no email address, no username and no password. We have no way to
+    contact you, no way to identify your device, and no profile of you to build, sell or lose.
+  </p>
+
+  <p>
+    The App does handle two kinds of information locally on your device, described below. What reaches our
+    routing service is a rounded starting point, only to compute driving times.
+  </p>
+
+  <h2>2. Location</h2>
+
+  <p>
+    <strong>Location is optional.</strong> The App works fully without it: instead of using your device's
+    position you can type a town name or ZIP code, and every feature behaves the same way.
+  </p>
+
+  <p>If you do grant location permission:</p>
+
+  <ul>
+    <li>
+      <strong>Foreground only.</strong> The App requests "While Using the App" permission. It does not request,
+      and cannot obtain, background location.
+    </li>
+    <li>
+      <strong>One fix, on request.</strong> A single position reading is taken at the moment you ask for a
+      recommendation. The App does not follow your position, does not use geofencing, and does not run when it
+      is closed.
+    </li>
+    <li>
+      <strong>Rounded before it leaves.</strong> The position is rounded to about 100 meters and sent to our
+      routing service, with nothing that identifies you or your device. The service rounds it again on arrival
+      and asks TomTom for the routes.
+    </li>
+    <li>
+      <strong>No history.</strong> The routing service keeps the rounded point for at most an hour, so the next
+      search from the same spot is quick, and then discards it. No trail of where you have been is kept, on the
+      device or anywhere else.
+    </li>
+  </ul>
+
+  <p>
+    Your position is used for one purpose: working out how long each beach would actually take to reach, so that
+    a nearer beach in heavy traffic can lose to a further one on a clear road.
+  </p>
+
+  <h2>3. What Leaves Your Device, and Where It Goes</h2>
+
+  <p>
+    The App talks to our routing service and to four outside services. <strong>Only the routing path ever
+    receives anything about you</strong>, and the distinction is deliberate rather than incidental:
+  </p>
+
+  <table>
+    <tr><th>Service</th><th>Operated by</th><th>What it receives</th></tr>
+    <tr>
+      <td>BeachPulse routing service, which passes the request to TomTom (routing and place lookup)</td>
+      <td>The Penelope Group LLC, hosted by Cloudflare, Inc.; routes by TomTom International B.V.</td>
+      <td><strong>Your starting point, rounded to about 100 meters</strong>, or the place name / ZIP code you
+          typed, plus the coordinates of the beaches being ranked. Nothing that identifies you or your device.
+          The rounded point is cached for at most an hour. TomTom receives the request from our service, not
+          from your device.</td>
+    </tr>
+    <tr>
+      <td>Open-Meteo (weather)</td>
+      <td>Open-Meteo</td>
+      <td>Only the fixed coordinates of the beaches, which are built into the App</td>
+    </tr>
+    <tr>
+      <td>NOAA CO-OPS and NDBC (tide, water temperature, waves)</td>
+      <td>U.S. National Oceanic and Atmospheric Administration</td>
+      <td>Only fixed monitoring-station identifiers, which are built into the App</td>
+    </tr>
+    <tr>
+      <td>National Weather Service (hazard alerts)</td>
+      <td>U.S. National Weather Service</td>
+      <td>Only the fixed coordinates of the beaches, which are built into the App</td>
+    </tr>
+  </table>
+
+  <p>
+    In other words, the weather, tide and hazard services are asked about <em>the beaches</em>, never about you.
+    They cannot learn your location from the App because the App never tells them. Only the routing service
+    needs a starting point, because a drive time cannot be computed without one.
+  </p>
+
+  <p>
+    These services receive your device's IP address as an unavoidable consequence of your device making a network
+    request, exactly as any website you visit would. We do not control what they do with it; their own privacy
+    policies apply:
+    <a href="https://www.tomtom.com/privacy/">TomTom</a>,
+    <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>,
+    <a href="https://open-meteo.com/en/terms">Open-Meteo</a>,
+    <a href="https://www.noaa.gov/protecting-your-privacy">NOAA</a>,
+    <a href="https://www.weather.gov/privacy">National Weather Service</a>.
+  </p>
+
+  <p>
+    If you tap a button to open directions, your device hands the destination to Apple Maps or Google Maps. From
+    that point their terms and privacy policies govern, not ours.
+  </p>
+
+  <h2>4. What Is Stored on Your Device</h2>
+
+  <p>The App saves a small amount of data in its own private storage on your phone:</p>
+
+  <ul>
+    <li>Your appearance setting (light, dark or system) and your units preference.</li>
+    <li>A flag recording that you have seen the introduction, so it is not shown twice.</li>
+    <li>
+      A short-lived cache of previously calculated driving times, so that asking the same question twice does not
+      repeat the same request. <strong>The coordinates in this cache are rounded to roughly 100 meters</strong>,
+      so no precise position is written to storage.
+    </li>
+  </ul>
+
+  <p>
+    None of this is transmitted anywhere. It is readable only by the App, it is included in an encrypted device
+    backup if you make one, and <strong>deleting the App deletes all of it</strong>. That is the complete data
+    deletion procedure; there is nothing on our side to request the deletion of.
+  </p>
+
+  <h2>5. What We Do Not Do</h2>
+
+  <ul>
+    <li><strong>No advertising.</strong> The App contains no ads and no advertising SDK.</li>
+    <li><strong>No analytics.</strong> There is no analytics or attribution SDK of any kind, from us or anyone else.</li>
+    <li><strong>No tracking.</strong> We do not collect the Identifier for Advertisers (IDFA) and do not track you
+        across other companies' apps or websites. No App Tracking Transparency prompt appears because there is
+        nothing to ask you to permit.</li>
+    <li><strong>No crash or usage reporting.</strong> Nothing reports back to us when the App is used or fails.</li>
+    <li><strong>No sale or sharing of personal information.</strong> The only thing we hold is a rounded,
+        unidentified starting point for at most an hour, used only to compute your drive. It is never sold or
+        shared for any other purpose.</li>
+    <li><strong>No profiling and no automated decisions about you.</strong> The App ranks beaches, not people.</li>
+  </ul>
+
+  <h2>6. Children's Privacy</h2>
+
+  <p>
+    BeachPulse is not directed to children under 13 and we do not knowingly collect personal information from
+    anyone. Because the App has no accounts and collects nothing, there is no children's data for us to hold or
+    delete. A parent with questions is welcome to contact us at the address below.
+  </p>
+
+  <h2>7. Your Rights</h2>
+
+  <p>
+    Privacy laws including the California Consumer Privacy Act (CCPA) and the EU/UK General Data Protection
+    Regulation (GDPR) give you rights to access, correct, delete and port the personal information a company
+    holds about you, and to object to its processing.
+  </p>
+
+  <p>
+    <strong>We hold no personal information that can be tied to you.</strong> The routing service's cache holds
+    rounded starting points with no identifier for at most an hour, so there is nothing we could find, produce,
+    correct, export or erase for a particular person. Everything the App keeps is on your own device and under your own control, and uninstalling
+    the App removes it. If you believe we hold information about you, write to us and we will tell you plainly
+    what we find.
+  </p>
+
+  <h2>8. Security</h2>
+
+  <p>
+    All network requests the App makes use encrypted HTTPS connections. We keep no store of user data: the only
+    thing our routing service holds is an hour-long cache of rounded, unidentified starting points, and the
+    TomTom key it uses is kept as a server secret, never in the App.
+  </p>
+
+  <h2>9. Changes to This Policy</h2>
+
+  <p>
+    If the App gains a feature that changes any of the above &mdash; an account system, a purchase, or anything
+    that sends information to a server of ours &mdash; this policy will be updated <strong>before</strong> that
+    version ships, the "Last Updated" date will change, and the change will be described here rather than
+    silently absorbed.
+  </p>
+
+  <p>
+    <strong>September 24, 2026:</strong> driving times now pass through a routing service we run (hosted by
+    Cloudflare) instead of the App contacting TomTom directly, so that no TomTom key ships inside the App. This
+    policy previously said we ran no servers; Sections 1, 2, 3, 5, 7 and 8 now describe that service. What it
+    receives is unchanged in kind: a starting point, now rounded before it leaves your device.
+  </p>
+
+  <h2>10. Contact Us</h2>
+
+  <p>
+    Questions about this policy or about privacy in BeachPulse:<br />
+    <a href="mailto:TPGLLC.Support@gmail.com">TPGLLC.Support@gmail.com</a><br />
+    The Penelope Group LLC
+  </p>
+
+  <p class="meta">
+    See also our <a href="terms.html">Terms of Use</a> and <a href="support.html">Support page</a>.
+    BeachPulse is independent and is not affiliated with, endorsed by, or sponsored by NOAA, the National
+    Weather Service, the National Park Service, or any county, municipality or beach operator.
+  </p>
+
+</body>
+</html>
