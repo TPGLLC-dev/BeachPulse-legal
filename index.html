@@ -30,7 +30,7 @@
   <h1>BeachPulse &mdash; Privacy Policy</h1>
   <p class="meta">
     <strong>Effective Date:</strong> September 4, 2026 &nbsp;&bull;&nbsp;
-    <strong>Last Updated:</strong> September 24, 2026
+    <strong>Last Updated:</strong> October 7, 2026
   </p>
 
   <p>
@@ -45,7 +45,9 @@
       identify you, and we keep no record of your use of the App. The only personal information the App ever
       transmits is your starting point, rounded to about 100 meters and sent with nothing that identifies you to
       our routing service, which asks TomTom for driving times and keeps that rounded point for at most an hour
-      &mdash; and only if you choose to share it.
+      &mdash; and only if you choose to share it. Separately, our purchase provider, RevenueCat, receives a
+      random, anonymous ID and your device's app identifier so the App can tell whether you have bought Pro;
+      neither is linked to your name or email.
     </p>
   </div>
 
@@ -54,7 +56,9 @@
   <p>
     <strong>We collect nothing about who you are.</strong> We operate no account system and no database. The one
     service we run, for driving times, receives a rounded starting point and nothing else about you (Section 3). There is no sign-up, no email address, no username and no password. We have no way to
-    contact you, no way to identify your device, and no profile of you to build, sell or lose.
+    contact you and no profile of you to build, sell or lose. The one exception is a purchase record: so the App
+    can recognize BeachPulse Pro, our purchase provider receives an anonymous ID and your device's app identifier
+    (Section 3).
   </p>
 
   <p>
@@ -101,8 +105,9 @@
   <h2>3. What Leaves Your Device, and Where It Goes</h2>
 
   <p>
-    The App talks to our routing service and to four outside services. <strong>Only the routing path ever
-    receives anything about you</strong>, and the distinction is deliberate rather than incidental:
+    The App talks to our routing service, to several public data services and to our purchase provider.
+    <strong>Only the routing service ever receives your location</strong>, and the distinction is deliberate
+    rather than incidental:
   </p>
 
   <table>
@@ -130,10 +135,34 @@
       <td>U.S. National Weather Service</td>
       <td>Only the fixed coordinates of the beaches, which are built into the App</td>
     </tr>
+    <tr>
+      <td>Florida Fish and Wildlife Conservation Commission (red tide sampling)</td>
+      <td>FWC, hosted on Esri ArcGIS</td>
+      <td>Only the fixed coordinates of the beaches, which are built into the App</td>
+    </tr>
+    <tr>
+      <td>NOAA AOML (sargassum satellite data)</td>
+      <td>U.S. National Oceanic and Atmospheric Administration</td>
+      <td>Only the fixed coordinates of the beach you are viewing, which are built into the App</td>
+    </tr>
+    <tr>
+      <td>Iowa Environmental Mesonet (weather radar images)</td>
+      <td>Iowa State University</td>
+      <td>Only the fixed coordinates of the beach you are viewing, which are built into the App</td>
+    </tr>
+    <tr>
+      <td>RevenueCat (BeachPulse Pro purchase records)</td>
+      <td>RevenueCat, Inc.</td>
+      <td>A random, anonymous ID created by the App, your device's identifier for our apps (Apple's Identifier
+          for Vendor, IDFV), your BeachPulse purchase history from Apple, and basic device details (such as iOS
+          version, App version and storefront country). Sent each time the App opens, whether or not you buy Pro.
+          Never your name, email, location or payment details. Used only to know whether Pro is unlocked.</td>
+    </tr>
   </table>
 
   <p>
-    In other words, the weather, tide and hazard services are asked about <em>the beaches</em>, never about you.
+    In other words, the weather, tide, water, radar and hazard services are asked about <em>the beaches</em>,
+    never about you.
     They cannot learn your location from the App because the App never tells them. Only the routing service
     needs a starting point, because a drive time cannot be computed without one.
   </p>
@@ -146,7 +175,17 @@
     <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>,
     <a href="https://open-meteo.com/en/terms">Open-Meteo</a>,
     <a href="https://www.noaa.gov/protecting-your-privacy">NOAA</a>,
-    <a href="https://www.weather.gov/privacy">National Weather Service</a>.
+    <a href="https://www.weather.gov/privacy">National Weather Service</a>,
+    <a href="https://myfwc.com/about/privacy/">FWC</a>,
+    <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>,
+    <a href="https://www.iastate.edu/privacy">Iowa State University</a>,
+    <a href="https://www.revenuecat.com/privacy">RevenueCat</a>.
+  </p>
+
+  <p>
+    <strong>Payments.</strong> If you buy BeachPulse Pro, Apple processes the payment under your Apple ID and
+    <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. We never see your card or payment
+    details, and we cannot connect a purchase to your name or email.
   </p>
 
   <p>
@@ -166,10 +205,13 @@
       repeat the same request. <strong>The coordinates in this cache are rounded to roughly 100 meters</strong>,
       so no precise position is written to storage.
     </li>
+    <li>The anonymous purchase ID and a cached copy of whether Pro is unlocked, kept by our purchase provider's
+        library.</li>
   </ul>
 
   <p>
-    None of this is transmitted anywhere. It is readable only by the App, it is included in an encrypted device
+    Apart from the purchase ID described in Section 3, none of this is transmitted anywhere. It is readable only
+    by the App, it is included in an encrypted device
     backup if you make one, and <strong>deleting the App deletes all of it</strong>. That is the complete data
     deletion procedure; there is nothing on our side to request the deletion of.
   </p>
@@ -183,9 +225,10 @@
         across other companies' apps or websites. No App Tracking Transparency prompt appears because there is
         nothing to ask you to permit.</li>
     <li><strong>No crash or usage reporting.</strong> Nothing reports back to us when the App is used or fails.</li>
-    <li><strong>No sale or sharing of personal information.</strong> The only thing we hold is a rounded,
-        unidentified starting point for at most an hour, used only to compute your drive. It is never sold or
-        shared for any other purpose.</li>
+    <li><strong>No sale or sharing of personal information.</strong> The only things held about you are a
+        rounded, unidentified starting point for at most an hour, used only to compute your drive, and an
+        anonymous purchase record used only to unlock Pro. Neither is ever sold or shared for any other
+        purpose.</li>
     <li><strong>No profiling and no automated decisions about you.</strong> The App ranks beaches, not people.</li>
   </ul>
 
@@ -193,7 +236,7 @@
 
   <p>
     BeachPulse is not directed to children under 13 and we do not knowingly collect personal information from
-    anyone. Because the App has no accounts and collects nothing, there is no children's data for us to hold or
+    anyone. Because the App has no accounts and collects nothing that identifies a person, there is no children's data for us to hold or
     delete. A parent with questions is welcome to contact us at the address below.
   </p>
 
@@ -208,7 +251,8 @@
   <p>
     <strong>We hold no personal information that can be tied to you.</strong> The routing service's cache holds
     rounded starting points with no identifier for at most an hour, so there is nothing we could find, produce,
-    correct, export or erase for a particular person. Everything the App keeps is on your own device and under your own control, and uninstalling
+    correct, export or erase for a particular person. A Pro purchase record is tied only to a random ID we cannot
+    connect to you; if you want it removed, email us and we will ask you for the details needed to find it. Everything the App keeps is on your own device and under your own control, and uninstalling
     the App removes it. If you believe we hold information about you, write to us and we will tell you plainly
     what we find.
   </p>
@@ -228,6 +272,14 @@
     that sends information to a server of ours &mdash; this policy will be updated <strong>before</strong> that
     version ships, the "Last Updated" date will change, and the change will be described here rather than
     silently absorbed.
+  </p>
+
+  <p>
+    <strong>October 7, 2026:</strong> BeachPulse Pro is now available as a purchase, so Sections 1, 3, 4, 5 and
+    7 now describe our purchase provider, RevenueCat, and what it receives. This section previously promised an
+    update before any purchase shipped; this is that update. The table in Section 3 also now lists every public
+    data service the App asks about beaches (red tide, sargassum and radar were missing). None of them
+    receives anything about you.
   </p>
 
   <p>
